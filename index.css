@@ -1,67 +1,155 @@
-*{
+body, html{
     margin: 0;
     padding: 0;
-
-
-}
-
-
-.navigationdiv {
-    background-color: rgb(129, 51, 51);
+    box-sizing: border-box;
     width: 100%;
-    text-align: center;
+    height: 100%;
 }
-.navigationdiv a {
-    padding: 8px;
-    margin: 18px;
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    background-color: rgb(129, 51, 51);}
-.maincontainer{
-    height: 600px;
-    width: 100%;
-    background-image: url(palm-trees-at-night-258154.jpg);
-    background-size: contain ;
-    background-repeat:repeat;
+*{
+    font-size: 1em;
+}
+.main-cover{
+    height: 85vh;
+    width: 100vw;
+    background-image: url(mobilecover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
-    
-}
-.titlediv{
-    width: 50%;
-    height: inherit;
-    position: relative;;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
 
 }
-.hotelname{
-    font-size: 90px;
-    position: absolute;
-    left: 60px;
-    top: 180px;
-    color: white;
-    text-align: center;
+.div-icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     
 }
-.logodiv{
-    position: absolute;
-    height: 150px;
-    width: 150px;
-    left: 300px;
-    top: 80px;
-    opacity: 0.8;
-
-    
+.div-icons i{
+    margin-left: 13vw;
 }
-.logodiv img{
+/*for nav */
+.nav{
+    text-align: left;
     width: 100%;
 }
-form>input{
-    height: 30px;
+.menu{
+    display: flex;
+    flex-direction: column;
+    background-color: slategray;
+    display: none;
 }
-.form-div{
-    width: 50%;
-    height: inherit;
-    border: 2px solid blue;
-    text-align: right;
+.menu a{
+    text-decoration: none;
+    color: rgb(25, 30, 99);
+    padding:10px;
+    margin: 0;
+    border: 0.4px solid gray;
+    flex: 100%;
+    text-transform: uppercase;
+
+}
+label{
+    font-size: 25px;
+    cursor: pointer;
+}
+label::after{
+    content: "MENU";
+}
+#toggle{
+    display: none;
+    text-align: left;
+}
+#toggle:checked + .menu{
+    display: flex;
+}
+.iconslist{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+}
+.nav i{
+    margin: 0 20px;
 }
 
+/*just after nav logo and stuffs*/
+.div-logo{
+    width: 300px;
+    flex: 100%;
+    
+}
+.div-location{
+    font-size: 2rem;
+    text-align: center;
+}
+.div-extrainfo{
+    height: 10vh;
+    width: 96vw;
+    border-radius: 70px;
+    position: absolute;
+    bottom: -5vh;
+    margin-left: 2vw;
+     display: flex;
+     flex-direction: row;
+     align-items: flex-start;
+     justify-content: space-around;
+     font-size: 1rem;
+     overflow: hidden;
+     background-color:rgb(157, 100, 211);
+     flex-wrap: nowrap;
+     border-bottom: 1px solid green;
+     box-shadow: 2px 2px 10px rgb(233, 69, 69);
+
+}
+.div-extrainfo a{
+    text-decoration: none;
+    margin-top: 1vh;
+
+}
+
+/*after main*/
+.div-booking{
+    height:300px;
+    width: 100vw;
+    background-color: rgb(184, 143, 68);
+    z-index: 3;
+   
+
+}
+.div-logo-location{
+    position: absolute;
+    top: 25vh;
+    left: 6vh;
+}
+
+@media screen and (min-width:480px){
+
+
+.menu a{
+    font-size: 1.5rem;
+    text-align: center;
+    border:none;
+}
+.div-logo-location{
+    justify-self: center;
+    align-self: center;
+    margin-top: 16vh;
+    position: unset;
+}
+.div-icons i{
+    margin-left: 18vw;
+}
+}
+@media screen and (min-width:768px) {
+    label {
+display:none ;
+    }
+.menu {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;}
+}
