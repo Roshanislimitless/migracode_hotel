@@ -176,7 +176,7 @@ form>*:not(label){
     color:rgb(187, 155, 155);
 
 }
-input:last-child{
+form button{
     background-color: green;
     color:purple;
 }
@@ -262,6 +262,9 @@ form{
     width: 3vw;
 }
 form > input{
+    width: 16vw;
+}
+form button{
     width: 16vw;
 }
 
