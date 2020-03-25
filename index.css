@@ -123,11 +123,10 @@ body, html{
 .div-extrainfo a{
     text-decoration: none;
     text-transform: uppercase;
-    padding: 35px 7px;
+    padding: 35px 17px;
     background-color: rgb(142, 43, 161);
     font-size: 0.7rem;
     margin: 0;
-    border-right: 1px solid gray;
     color: rgb(255, 255, 255);
 }
 .div-extrainfo a:hover{
@@ -229,7 +228,7 @@ input:last-child{
     margin-left: 18vw;
 }
 .div-extrainfo a {
-    padding: 35px 12px;
+    padding: 35px 25px;
 }
 }
 @media screen and (min-width:768px) {
@@ -288,7 +287,7 @@ form > input{
 
 }
 .div-extrainfo a{
-    padding: 35px 120px;
+    padding: 35px 200px;
 }
 .div-extrainfo {
     width: 90vw;
