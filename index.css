@@ -1,16 +1,19 @@
 body, html{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
+    background-color: rgb(106, 157, 224);
 }
 *{
     font-size: 1em;
+    font-family: 'Abel',
+    sans-serif;
 }
 .main-cover{
-    height: 85vh;
-    width: 100vw;
+    height: 80vh;
+    width: 100%;
     background-image: url(mobilecover.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -43,19 +46,27 @@ body, html{
 }
 .menu a{
     text-decoration: none;
-    color: rgb(25, 30, 99);
+    color: rgb(120, 58, 219);
     padding:10px;
     margin: 0;
     border: 0.4px solid gray;
     flex: 100%;
-    text-transform: uppercase;
+    text-transform:capitalize;
+    font-family: 'Open Sans Condensed',
+    sans-serif;
+
+    font-size: 0.6rem;
 
 }
-label{
+.nav a:hover{
+    transform: scale(1.4);
+    transition-duration: 0.8s;
+}
+.nav label{
     font-size: 25px;
     cursor: pointer;
 }
-label::after{
+.nav label::after{
     content: "MENU";
 }
 #toggle{
@@ -78,55 +89,130 @@ label::after{
 
 /*just after nav logo and stuffs*/
 .div-logo{
-    width: 300px;
+    width: 50vh ;
     flex: 100%;
     
 }
 .div-location{
-    font-size: 2rem;
+    font-size: 4vh;
     text-align: center;
 }
-.div-extrainfo{
+.div-logo-location {
+    align-self: center;
+    justify-self: center;
+    margin-top: 13vh;
+}
+.div-extrainfo {
     height: 10vh;
-    width: 96vw;
-    border-radius: 70px;
+    width: 100%;
     position: absolute;
-    bottom: -5vh;
-    margin-left: 2vw;
-     display: flex;
-     flex-direction: row;
-     align-items: flex-start;
-     justify-content: space-around;
-     font-size: 1rem;
-     overflow: hidden;
-     background-color:rgb(157, 100, 211);
-     flex-wrap: nowrap;
-     border-bottom: 1px solid green;
-     box-shadow: 2px 2px 10px rgb(233, 69, 69);
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    font-size: 1rem;
+    overflow: hidden;
+    background-color: rgb(157, 100, 211);
+    flex-wrap: nowrap;
+    border-bottom: 1px solid green;
+    box-shadow: 2px 2px 10px rgb(233, 69, 69);
 
 }
+
 .div-extrainfo a{
     text-decoration: none;
-    margin-top: 1vh;
-
+    text-transform: uppercase;
+    padding: 35px 7px;
+    background-color: rgb(142, 43, 161);
+    font-size: 0.7rem;
+    margin: 0;
+    border-right: 1px solid gray;
+    color: rgb(255, 255, 255);
+}
+.div-extrainfo a:hover{
+    background-color: rgb(95, 77, 99);
+    color: black;
+    transform: scale(1.2);
 }
 
 /*after main*/
+.booking-title{
+    background-color: green;
+    display: block;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    height: 7vh;    
+}
+.booking-title h2{
+    padding: 2vh;
+    margin-top:0px;
+}
 .div-booking{
-    height:300px;
-    width: 100vw;
-    background-color: rgb(184, 143, 68);
-    z-index: 3;
+    width: 100%;
+    background-color: rgb(93, 127, 148);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: inherit;
+    align-items: center;
+    padding: 0px;
+
+
+}
+form>*:not(label){
+    border: none;
+    border-radius: 1vh; 
+    padding: 2.5vh;
+    background-color: rgba(202, 76, 76, 0.13);
+    width: 100%;
+    padding: 0.2vh;
+
+}
+input:last-child{
+    background-color: green;
+}
+
+.div-cards{
+    height: 80vh;
+    width: 100%;    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3px 0px;
+    align-items: center;
+
    
+}
+.div-cards > div{
+    height: 50vh;
+    width: 15%;
+    box-shadow: 1px 1px 4px black;
+    background-color: rgb(122, 56, 56);
+    flex: 100%;
+
 
 }
-.div-logo-location{
-    position: absolute;
-    top: 25vh;
-    left: 6vh;
+.div-cards img{
+    width: 100%;
+    height: 80%;
+
+}
+.div-cards p{
+    text-align: center;
 }
 
-@media screen and (min-width:480px){
+
+
+
+@media screen and (min-width:350px){
 
 
 .menu a{
@@ -134,22 +220,87 @@ label::after{
     text-align: center;
     border:none;
 }
-.div-logo-location{
-    justify-self: center;
-    align-self: center;
-    margin-top: 16vh;
-    position: unset;
-}
 .div-icons i{
     margin-left: 18vw;
 }
+.div-extrainfo a {
+    padding: 35px 12px;
+}
 }
 @media screen and (min-width:768px) {
-    label {
+.nav label {
 display:none ;
     }
 .menu {
+    display: block;
+    background-color: transparent;
     display: flex;
     flex-direction: row;
-    background-color: transparent;}
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+.div-booking{
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    align-items: center; 
+}
+
+form{
+    flex-direction: row;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.div-booking form select{
+    width: 3vw;
+}
+form > input{
+    width: 16vw;
+}
+
+
+
+.div-cards{
+    flex-direction: row;
+    align-items: center;
+    background-image: url(palm-trees-at-night-258154.jpg);
+    background-size: 100%;
+    justify-content: space-evenly;
+    margin-top: 0px;
+
+}
+.div-cards image{
+    border-radius: 2vh 2vh 2vh 2vh; 
+}
+.div-cards>div{
+    flex: unset;
+    width: 15%;
+    height: 50vh;
+    border-radius: 2vh 2vh 2vh 2vh;;
+
+}
+.div-extrainfo a{
+    padding: 35px 120px;
+}
+.div-extrainfo {
+    width: 90vw;
+    border-radius: 70px;
+    position: absolute;
+    bottom: 0px;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+    overflow: hidden;
+    background-color: rgb(157, 100, 211);
+    flex-wrap: nowrap;
+    border-bottom: 1px solid green;
+    box-shadow: 2px 2px 10px rgb(233, 69, 69);
+
+}
 }
