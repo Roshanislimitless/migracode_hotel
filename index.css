@@ -151,7 +151,7 @@ body, html{
 }
 .div-booking{
     width: 100%;
-    background-color: rgb(93, 127, 148);
+    background-color: rgba(45, 60, 70, 0.719);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,13 +171,15 @@ form>*:not(label){
     border: none;
     border-radius: 1vh; 
     padding: 2.5vh;
-    background-color: rgba(202, 76, 76, 0.13);
+    background-color: rgba(116, 55, 55, 0.562);
     width: 100%;
     padding: 0.2vh;
+    color:rgb(187, 155, 155);
 
 }
 input:last-child{
     background-color: green;
+    color:purple;
 }
 
 .div-cards{
@@ -207,6 +209,9 @@ input:last-child{
 }
 .div-cards p{
     text-align: center;
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0px;
 }
 
 
