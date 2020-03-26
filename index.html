@@ -62,32 +62,57 @@
     <div class="booking-title">
         <h2>BOOKING FORM</h2>
     </div>
+
 <div class="div-booking">
     
-    <form action="https://www.google.com/search" method="get">
-        <input type="text" name="country-search" placeholder="city"><br>
-        <label> Check-in</label>    
-        <input type="date" id="checkin"><br>
-        <label>Check-out</label>
-        <input type="date"><br>
-         
-        <label name="number-of-persons">Number of persons</label>
+    <form action="https://www.google.com/search" method="POST">
+
+        <label>
+        <p>Room type</p>
         <select>
-            <option value="1">1</option>
-            <option value="2">2</option>    
-            <option value="3">3</option>
-            <option value="4">4</option>
-        </select><br>
-    
-        <label for="">Rooms</label>
+            <option value="4">Ultra luxary</option>
+            <option value="1">Deluxe room</option>
+            <option value="2">Pent house</option>
+            <option value="3">Normal room</option>
+            
+        </select>
+        </label>
+        
+        <label >
+        <p> Check-in</p>
+        <input type="date" id="checkin">
+        </label>    
+        
+        <label>
+        <p> Check-out</p>
+        <input type="date"><br>
+        </label>
+        
+         
+        <label name="number-of-persons">
+        <p> Number of persons</p>
         <select>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
         </select>
-        <button type="submit">Search</button>
+        </label>
+        
     
+        <label for="">
+        <p>Number of rooms</p>
+        <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        </label>
+      
+        <div>
+        <button type="submit">Search</button>
+        </div>
     </form>
 
 

@@ -1,3 +1,4 @@
+/*common*/
 body, html{
     margin: 0px;
     padding: 0px;
@@ -10,7 +11,9 @@ body, html{
     font-size: 1em;
     font-family: 'Abel',
     sans-serif;
+    box-sizing: border-box;
 }
+/*main cover*/
 .main-cover{
     height: 80vh;
     width: 100%;
@@ -24,12 +27,12 @@ body, html{
     overflow: hidden;
 
 }
-.div-icons{
+.div-icons{ 
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    
 }
+
 .div-icons i{
     margin-left: 13vw;
 }
@@ -54,7 +57,6 @@ body, html{
     text-transform:capitalize;
     font-family: 'Open Sans Condensed',
     sans-serif;
-
     font-size: 0.6rem;
 
 }
@@ -123,7 +125,7 @@ body, html{
 .div-extrainfo a{
     text-decoration: none;
     text-transform: uppercase;
-    padding: 35px 17px;
+    padding: 25px;
     background-color: rgb(142, 43, 161);
     font-size: 0.7rem;
     margin: 0;
@@ -135,52 +137,67 @@ body, html{
     transform: scale(1.2);
 }
 
-/*after main*/
+/*booking title*/
 .booking-title{
     background-color: green;
     display: block;
     width: 100%;
     margin: 0px;
     text-align: center;
-    height: 7vh;    
+        
+}
+.booking-title{
+    padding: 2vh;
+    background-image: url(picturehotel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .booking-title h2{
     padding: 2vh;
     margin-top:0px;
+    font-size: xx-large;
+}
+
+/*form*/
+form{display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    border: none;
+    background-color: rgba(165, 148, 148, 0.767);  
+    color:rgb(0, 0, 0);
+    justify-content: space-evenly;
+
+
 }
 .div-booking{
     width: 100%;
-    background-color: rgba(45, 60, 70, 0.719);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
 }
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: inherit;
-    align-items: center;
-    padding: 0px;
-
-
+form label{
+   text-align: center;
+   width: 100%;
 }
-form>*:not(label){
-    border: none;
-    border-radius: 1vh; 
-    padding: 2.5vh;
-    background-color: rgba(116, 55, 55, 0.562);
+form label select,
+form label input{
     width: 100%;
-    padding: 0.2vh;
-    color:rgb(187, 155, 155);
-
+    border-radius: 20px;
+    padding: 7px;   
+    border:1px solid rgb(87, 76, 76);
+   background-color: transparent;
 }
 form button{
+    width: 40%;
     background-color: green;
-    color:purple;
+    border: 1px solid green;
+    padding: 7px;
+
+}
+form div{
+    width: 100%;
+    text-align: center;
 }
 
+/*after form for cards*/
 .div-cards{
     height: 80vh;
     width: 100%;    
@@ -212,10 +229,6 @@ form button{
     margin: 0px;
     padding: 0px;
 }
-
-
-
-
 @media screen and (min-width:350px){
 
 
@@ -236,39 +249,39 @@ form button{
 display:none ;
     }
 .menu {
-    display: block;
     background-color: transparent;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-evenly;
-
-
 }
-.div-booking{
+
+.div-extrainfo {
+    width: 90vw;
+    border-radius: 70px;
+    position: absolute;
+    bottom: 0px;
+    margin-left: 5vw;
     display: flex;
     flex-direction: row;
-    height: 15vh;
-    align-items: center; 
-}
-
-form{
-    flex-direction: row;
     align-items: center;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.div-booking form select{
-    width: 3vw;
-}
-form > input{
-    width: 16vw;
-}
-form button{
-    width: 16vw;
+    justify-content: space-around;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgb(233, 69, 69);
+
 }
 
-
+.div-booking form{
+    flex-direction: row;
+    padding: 6vh;
+}
+form label select,
+form label input {
+    width: 70%  ;
+    border-radius: 20px;
+    padding: 7px;
+    border: 1px solid rgb(87, 76, 76);
+    background-color: transparent;
+}
 
 .div-cards{
     flex-direction: row;
@@ -289,24 +302,5 @@ form button{
     border-radius: 2vh 2vh 2vh 2vh;;
 
 }
-.div-extrainfo a{
-    padding: 35px 150px;
-}
-.div-extrainfo {
-    width: 90vw;
-    border-radius: 70px;
-    position: absolute;
-    bottom: 0px;
-    margin-left: 5vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 1.4rem;
-    overflow: hidden;
-    flex-wrap: nowrap;
-    border-bottom: 1px solid green;
-    box-shadow: 2px 2px 10px rgb(233, 69, 69);
 
-}
 }
