@@ -12,10 +12,11 @@ body, html{
     font-family: 'Abel',
     sans-serif;
     box-sizing: border-box;
+    border-collapse: collapse;
 }
-/*main cover*/
+/*main cover.................................*/
 .main-cover{
-    height: 80vh;
+    height: 72vh;
     width: 100%;
     background-image: url(mobilecover.jpg);
     background-size: cover;
@@ -31,38 +32,39 @@ body, html{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center ;
+    justify-content: space-evenly;
+    width: 100%;    
 }
-
-.div-icons i{
-    margin-left: 13vw;
-}
-/*for nav */
+/*for nav...............................................*/
 .nav{
-    text-align: left;
+    text-align: center;
     width: 100%;
 }
+/*for pointer click menu.....................*/
 .menu{
     display: flex;
     flex-direction: column;
     background-color: slategray;
     display: none;
+     box-shadow: 1px 1px 8px rgb(123, 41, 139);
 }
 .menu a{
     text-decoration: none;
-    color: rgb(120, 58, 219);
     padding:10px;
     margin: 0;
-    border: 0.4px solid gray;
+    border-bottom: 2px solid rgb(116, 103, 103);
     flex: 100%;
     text-transform:capitalize;
     font-family: 'Open Sans Condensed',
     sans-serif;
-    font-size: 0.6rem;
+    font-size: 1.5rem;
 
 }
 .nav a:hover{
     transform: scale(1.4);
-    transition-duration: 0.8s;
+    transition-duration: 0.5s;
+    text-decoration: overline;
 }
 .nav label{
     font-size: 25px;
@@ -73,23 +75,12 @@ body, html{
 }
 #toggle{
     display: none;
-    text-align: left;
 }
 #toggle:checked + .menu{
     display: flex;
 }
-.iconslist{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-end;
 
-}
-.nav i{
-    margin: 0 20px;
-}
-
-/*just after nav logo and stuffs*/
+/*main logo................................*/
 .div-logo{
     width: 50vh ;
     flex: 100%;
@@ -98,12 +89,18 @@ body, html{
 .div-location{
     font-size: 4vh;
     text-align: center;
+    font-family: 'Playfair Display',
+    serif;
+    color: rgb(92, 27, 92);
+    
 }
 .div-logo-location {
     align-self: center;
     justify-self: center;
-    margin-top: 13vh;
+    margin-top: 6vh;
+   
 }
+/*extrainfo navbar.........................*/
 .div-extrainfo {
     height: 10vh;
     width: 100%;
@@ -112,71 +109,71 @@ body, html{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content:center;
     font-size: 1rem;
     overflow: hidden;
     background-color: rgb(142, 43, 161);
     flex-wrap: nowrap;
-    border-bottom: 1px solid green;
-    box-shadow: 2px 2px 10px rgb(233, 69, 69);
 
 }
 
 .div-extrainfo a{
     text-decoration: none;
     text-transform: uppercase;
-    padding: 25px;
     background-color: rgb(142, 43, 161);
-    font-size: 0.7rem;
+    font-size: 1rem;
     margin: 0;
     color: rgb(255, 255, 255);
-}
+    padding: 3vh;
+}   
 .div-extrainfo a:hover{
     background-color: rgb(95, 77, 99);
     color: black;
-    transform: scale(1.5);
+    transform: scale(1.3);
     transition-duration: 0.4s;
 }
 
-/*booking title*/
+/*booking title.....................................*/
 .booking-title{
-    background-color: green;
-    display: block;
-    width: 100%;
-    margin: 0px;
     text-align: center;
-        
-}
-.booking-title{
-    padding: 2vh;
-    background-image: url(picturehotel.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 100%;
+    background-color: thistle;
+
 }
 .booking-title h2{
-    padding: 2vh;
-    margin-top:0px;
+    padding: 2vh 0;
+    margin:0px;
     font-size: xx-large;
+    display: block;
 }
 
-/*form*/
-form{display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+/*form div container......................................*/
+.div-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row ;
+    flex-wrap: wrap;
+    margin: 3px 0px;
     align-items: center;
-    border: none;
+
+
+}
+
+.div-form form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     background-color: rgba(165, 148, 148, 0.767);  
     color:rgb(0, 0, 0);
     justify-content: space-evenly;
+    flex-basis: 100%;
 
 
-}
-.div-booking{
-    width: 100%;
-}
+}   
 form label{
    text-align: center;
-   width: 100%;
+   flex-basis: 100%;
 }
 form label select,
 form label input{
@@ -189,39 +186,31 @@ form label input{
 form button{
     width: 40%;
     background-color: green;
-    border: 1px solid green;
+    border: 1px;
     padding: 7px;
+    border-radius: 5px;
 
 }
 form div{
     width: 100%;
     text-align: center;
+    margin: 3vh     ;
+}
+form button:hover{
+    opacity: 0.7;
 }
 
-/*after form for cards*/
-.div-cards{
-    height: 80vh;
-    width: 100%;    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 3px 0px;
-    align-items: center;
+/*formdiv container cards*/
 
-   
-}
-.div-cards > div{
-    height: 50vh;
-    width: 15%;
-    box-shadow: 1px 1px 4px black;
-    background-color: rgb(122, 56, 56);
-    flex: 100%;
-
+.div-form>div {
+    flex-basis: 300px;
+    flex-grow: unset;
+    margin: 2vh 2vh;
 
 }
-.div-cards img{
+.div-form img{
     width: 100%;
-    height: 80%;
+    height: 90%;
 
 }
 .div-cards p{
@@ -230,22 +219,8 @@ form div{
     margin: 0px;
     padding: 0px;
 }
-@media screen and (min-width:350px){
-
-
-.menu a{
-    font-size: 1.5rem;
-    text-align: center;
-    border:none;
-}
-.div-icons i{
-    margin-left: 18vw;
-}
-.div-extrainfo a {
-    padding: 35px 25px;
-}
-}
-@media screen and (min-width:768px) {
+@media screen and (min-width:600px) {
+    /*for nav................................*/
 .nav label {
 display:none ;
     }
@@ -255,54 +230,52 @@ display:none ;
     flex-direction: row;
     justify-content: space-evenly;
 }
+.menu a{
+    border: none;
+}
 
+/*extrainfo navbar.................................*/
 .div-extrainfo {
-    width: 90vw;
+    width: 90%;
     border-radius: 70px;
     position: absolute;
     bottom: 0px;
-    margin-left: 5vw;
+    margin-left: 5%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     overflow: hidden;
-    box-shadow: 2px 2px 10px rgb(233, 69, 69);
 
 }
 
-.div-booking form{
-    flex-direction: row;
+.div-form form{
+    flex-direction: row;    
     padding: 6vh;
-}
-form label select,
-form label input {
-    width: 70%  ;
-    border-radius: 20px;
-    padding: 7px;
-    border: 1px solid rgb(87, 76, 76);
-    background-color: transparent;
+    flex-basis: 100%;
 }
 
-.div-cards{
+.div-form{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url(palm-trees-at-night-258154.jpg);
+    background-color: white;
     background-size: 100%;
     justify-content: space-evenly;
     margin-top: 0px;
 
 }
-.div-cards image{
+.div-form image{
     border-radius: 2vh 2vh 2vh 2vh; 
 }
-.div-cards>div{
-    flex: 20%;
-    height: 50vh;
-    border-radius: 2vh 2vh 2vh 2vh;
-    margin: 0 4vh;
 
+.div-booking{
+    flex: 100%;
+}
+form label {
+    text-align: center;
+    flex-basis: unset;
+    margin: 1vh;
 }
 
 }
