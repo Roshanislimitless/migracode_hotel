@@ -17,7 +17,7 @@ body, html{
 }
 /*main cover.................................*/
 .main-cover{
-    height: 72vh;
+    height: 90vh;
     width: 100%;
     background-image: url(mobilecover.jpg);
     background-size: cover;
@@ -92,13 +92,13 @@ body, html{
     text-align: center;
     font-family: 'Playfair Display',
     serif;
-    color: rgb(92, 27, 92);
+    color: rgb(255, 255, 255);
     
 }
 .div-logo-location {
     align-self: center;
     justify-self: center;
-    margin-top: 6vh;
+    margin-top: 17vh;
    
 }
 /*extrainfo navbar.........................*/
@@ -128,17 +128,19 @@ body, html{
     padding: 3vh;
 }   
 .div-extrainfo a:hover{
-    background-color: rgb(95, 77, 99);
-    color: black;
+    background-color: rgb(97, 168, 164);
+    color: rgb(231, 212, 231);
     transform: scale(1.3);
     transition-duration: 0.4s;
+    
 }
 
 /*booking title.....................................*/
 .booking-title{
     text-align: center;
     width: 100%;
-    background-color: thistle;
+    background-image: url(form.jpg);
+    opacity: 0.6;
 
 }
 .booking-title h2{
@@ -146,6 +148,7 @@ body, html{
     margin:0px;
     font-size: xx-large;
     display: block;
+    color: wheat;
 }
 
 /*form div container......................................*/
@@ -156,6 +159,9 @@ body, html{
     flex-wrap: wrap;
     margin: 3px 0px;
     align-items: center;
+     background-color: white;
+    background-image: url(form.jpg);
+    opacity: 0.8;
 
 
 }
@@ -165,7 +171,7 @@ body, html{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    background-color: rgba(165, 148, 148, 0.767);  
+    background-color: transparent;  
     color:rgb(0, 0, 0);
     justify-content: space-evenly;
     flex-basis: 100%;
@@ -176,12 +182,15 @@ form label{
    text-align: center;
    flex-basis: 100%;
 }
+form label p{
+    color: wheat;
+}
 form label select,
 form label input{
     width: 100%;
     border-radius: 20px;
     padding: 7px;   
-    border:1px solid rgb(87, 76, 76);
+    border:1px solid rgb(231, 219, 219);
    background-color: transparent;
 }
 form button{
@@ -205,13 +214,18 @@ form button:hover{
 
 .offer-pkg-main{
     text-align: center  ;
+    background-image: url(interior.jpg);
+}
+.offer-pkg-main h2{
+    color: rgb(212, 212, 186);
+    font-size: xx-large;
 }
 .offer-pkg-container{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    border: 1px solid green;
+    align-items: center;
     width: 80%;
-    height: 430px;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -224,18 +238,19 @@ form button:hover{
     
 }
 .offer-pkg-img img{
-    max-width: 100%;
-    height: 430px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 3px 3px 20px rgb(157, 160, 126);
 }
 .offer-pkg-text{
     flex-basis: 300px;
     flex-grow: 1;
-    background-color: rgb(97, 95, 74);
     height: inherit;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 3vh 2vw;
+    justify-content: space-evenly;
+    color: rgb(236, 233, 204);
 }
 .offer-pkg-text-1 h3{
     font-size: 2rem;
@@ -243,17 +258,29 @@ form button:hover{
 } 
 .offer-pkg-text ul{
     list-style-type: square;
-    text-align: left;
+    text-align: center;
 }
 .offer-pkg-text ul li{
     line-height: 5vh;
 
 }
 .offer-pkg-text-2 button {
-    padding:2vh 6vh;
-    border: 1px;
+    padding:1vh 3vh;
+    border: 1px solid rgb(185, 179, 124);
     border-radius: 1vh;
+    background-color: transparent;
+    color: rgb(223, 219, 187);
+    margin: 3vh 0;
     
+}
+.offer-pkg-text-2 button:hover{
+    background-color: rgb(82, 81, 67);
+}
+.offer-pkg-container-2{
+    flex-wrap: wrap-reverse;
+}
+.offer-pkg-container-4{
+    flex-wrap: wrap-reverse;
 }
 
 @media screen and (min-width:600px) {
@@ -302,14 +329,17 @@ display:none ;
     margin-top: 0px;
 
 }
-
-.div-booking{
-    flex: 100%;
-}
 form label {
     text-align: center;
     flex-basis: unset;
     margin: 1vh;
 }
 
+
+}
+
+@media screen and (min-width:800px){
+.offer-pkg-container {
+    flex-wrap: nowrap;
+}
 }
