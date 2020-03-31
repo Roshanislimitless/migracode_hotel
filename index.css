@@ -148,8 +148,7 @@ body, html{
 .booking-title{
     text-align: center;
     width: 100%;
-    background-image: url(form.jpg);
-    opacity: 0.6;
+
 
 }
 .booking-title h2{
@@ -157,7 +156,7 @@ body, html{
     margin:0px;
     font-size: xx-large;
     display: block;
-    color: wheat;
+    color: rgb(187, 57, 212);
 }
 
 /*form div container......................................*/
@@ -168,9 +167,7 @@ body, html{
     flex-wrap: wrap;
     margin: 3px 0px;
     align-items: center;
-     background-color: white;
-    background-image: url(form.jpg);
-    opacity: 0.8;
+    background-image: linear-gradient(to bottom, rgb(133, 46, 46), black);
 
 
 }
@@ -180,10 +177,10 @@ body, html{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    background-color: transparent;  
     color:rgb(0, 0, 0);
     justify-content: space-evenly;
     flex-basis: 100%;
+
 
 
 }   
@@ -192,7 +189,7 @@ form label{
    flex-basis: 100%;
 }
 form label p{
-    color: wheat;
+    color: rgb(236, 236, 236);
 }
 form label select,
 form label input{
@@ -306,11 +303,13 @@ form button:hover{
     box-shadow: 3px 3px 8px white;
     border-radius: 2vh;
 }
+footer{
+    background-image: linear-gradient(to bottom, black,  white);
+}
 
 footer > div{
     width: 100%;
     height: 15vh;
-    background-color: rgb(63, 61, 61);
     text-align: center;
     padding: 1.5vh;
 }
@@ -358,10 +357,10 @@ display:none ;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    background-color: white;
     background-size: 100%;
     justify-content: space-evenly;
     margin-top: 0px;
+     background-image: linear-gradient(to bottom, rgb(253, 253, 253), black);
 
 }
 form label {
