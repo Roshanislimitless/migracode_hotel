@@ -66,7 +66,11 @@
 
     
     <div class="booking-title">
+        <p>Cant decide ? bored of reading ? or anything</p>
         <h2>BOOKING FORM</h2>
+        <a href="index1.html" target="_blank">
+        <p>Well, click here to make booking even more easy</p>
+        </a>
     </div>
 
     <div class="div-form"><!--form div container............-->
@@ -74,7 +78,7 @@
 
             <label>
                 <p>Room type</p>
-                <select>
+                <select autofocus>
                     <option value="4">Ultra luxary</option>
                     <option value="1">Deluxe room</option>
                     <option value="2">Pent house</option>
@@ -85,7 +89,7 @@
 
             <label>
                 <p> Check-in</p>
-                <input type="date" id="checkin">
+                <input type="datetime-local" id="checkin" placeholder="02/12/1992">
             </label>
 
             <label>
@@ -94,25 +98,27 @@
             </label>
 
 
-            <label name="number-of-persons">
+            <label name="number-of-persons" for="no-of-person">
                 <p> Number of persons</p>
-                <select>
+                <input list="number-of-person" id="no-of-person">
+                <datalist id="number-of-person" >
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
-                </select>
+                </datalist>
             </label>
 
 
-            <label for="">
+            <label for="no-of-rooms">
                 <p>Number of rooms</p>
-                <select>
+                <input list="number-of-rooms" id="no-of-rooms">
+                <datalist id="number-of-rooms">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
-                </select>
+                </datalist>
             </label>
 
             <div>

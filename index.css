@@ -148,6 +148,11 @@ body, html{
 .booking-title{
     text-align: center;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 
 
 }
@@ -158,7 +163,17 @@ body, html{
     display: block;
     color: rgb(187, 57, 212);
 }
+.booking-title a P,
+.booking-title p{
+    color: gold;
+    padding: 5px;
+    flex-basis: 100%;
 
+
+}
+.booking-title a p:hover{
+    background-color: darkslateblue;
+}
 /*form div container......................................*/
 .div-form {
     width: 100%;
@@ -380,6 +395,12 @@ form label {
     box-shadow: 3px 3px 8px white;
     border-radius: 2vh;
 }
+.booking-title p,
+.booking-title a p {
+    flex-basis: unset;
+}
+
+
 
 
 }
