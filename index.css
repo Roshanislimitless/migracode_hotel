@@ -17,10 +17,11 @@ body, html{
 }
 
 /*main cover.................................*/
+
 .main-cover{
     height: 90vh;
     width: 100%;
-    background-image: url(mobilecover.jpg);
+    background-image: url(/photos/mobilecover.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -112,7 +113,7 @@ body, html{
 }
 /*extrainfo navbar.........................*/
 .div-extrainfo {
-    height: 10vh;
+    height: 7vh;
     width: 100%;
     position: absolute;
     bottom: 0px;
@@ -230,12 +231,46 @@ form div{
 form button:hover{
     opacity: 0.7;
 }
+/*image gallery .......................................*/
+#gallery-wrap{
+    width: 100%;
+}
+#gallery {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    
+}
+#gallery-backward{
+    position: absolute;
+    top: 36%;
+    font-size: 80px;
+    color: green;
+    cursor: pointer;
+    
+}
+#gallery-forward{
+    position: absolute;
+    top: 36%;
+    right: 0px;
+    font-size: 80px;
+    color: green;
+    cursor: pointer;
+}
+#gallery img  {
+    width: 100%;
+    box-shadow: 1px 1px 2px rgb(255, 255, 255);
+
+
+
+}
 
 /*offers and packages.................................*/
 
 .offer-pkg-main{
     text-align: center  ;
-    background-image: url(interior.jpg);
+    background-image: url(/photos/interior.jpg);
 }
 
 .offer-pkg-main div h2{
@@ -378,6 +413,11 @@ display:none ;
      background-image: linear-gradient(to bottom, rgb(253, 253, 253), black);
 
 }
+/*image gallery.............................*/
+#gallery {
+    width: 80%;
+
+}
 form label {
     text-align: center;
     flex-basis: unset;
@@ -392,7 +432,7 @@ form label {
 }
 .awards-div p{
     padding: 2vh 3vw;
-    box-shadow: 3px 3px 8px white;
+    box-shadow: 3px 3px 8px rgb(8, 5, 5);
     border-radius: 2vh;
 }
 .booking-title p,
