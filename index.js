@@ -41,6 +41,6 @@ function backward(){
 
 function getImageUrl() {
     let imageSrc = document.querySelector('#image-collection');
-    imageSrc.src = "/photos/room" + galleryIndex + ".jpg"
+    imageSrc.src = "photos/room" + galleryIndex + ".jpg"
 }
 
