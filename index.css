@@ -21,7 +21,7 @@ body, html{
 .main-cover{
     height: 90vh;
     width: 100%;
-    background-image: url(/photos/mobilecover.jpg);
+    background-image: url(photos/mobilecover.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -270,7 +270,7 @@ form button:hover{
 
 .offer-pkg-main{
     text-align: center  ;
-    background-image: url(/photos/interior.jpg);
+    background-image: url(photos/interior.jpg);
 }
 
 .offer-pkg-main div h2{
